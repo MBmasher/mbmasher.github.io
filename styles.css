@@ -9,14 +9,11 @@ body {
 
 img {
 	max-width: 50%;
-}
-
-h2, .normal {
-	padding: 0px 20px 0px 20px;
-}
-
-img {
 	padding: 20px 20px 20px 20px;
+}
+
+h2, p{
+	padding: 0px 20px 0px 20px;
 }
 
 .centre {
@@ -28,3 +25,4 @@ img {
 	color: gray;
 	font-size: 14px;
 }
+
