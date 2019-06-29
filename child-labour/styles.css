@@ -4,19 +4,19 @@ html {
 }
 
 body {
-	background: #ffaa55:
-}
-
-h2 {
-	padding: 0px 40px 0px 40px;
+	background-color: #ffaa55:
 }
 
 img {
 	max-width: 50%;
 }
 
-.normal, img {
+h2, .normal {
 	padding: 0px 20px 0px 20px;
+}
+
+img {
+	padding: 20px 20px 20px 20px;
 }
 
 .centre {
