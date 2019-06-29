@@ -1,20 +1,12 @@
 html {
 	font-family: "Arial";
-	font-size: 18px;
-}
-
-body {
-	background-color: #ffaa55:
+	font-size: 19px;
 }
 
 h2, p {
 	padding: 0px 20px 0px 20px;
 }
 
-div.image p {
-	width: 60%;
-	float: left;
-}
 
 div.image img {
 	padding: 0px 20px 0px 20px;
@@ -36,8 +28,7 @@ div, footer {
 	font-size: 14px;
 }
 
-figcaption {
-	color: gray;
-	font-size: 14px;
-	text-align: center;
+body {
+	background-color: #ffaa55:
 }
+
