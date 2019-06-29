@@ -1,0 +1,30 @@
+html {
+	font-family: "Arial";
+	font-size: 18px;
+}
+
+body {
+	background: #ffaa55:
+}
+
+h2 {
+	padding: 0px 40px 0px 40px;
+}
+
+img {
+	max-width: 50%;
+}
+
+.normal, img {
+	padding: 0px 20px 0px 20px;
+}
+
+.centre {
+	font-size: 24px;
+	text-align: center;
+}
+
+.small {
+	color: gray;
+	font-size: 14px;
+}
