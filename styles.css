@@ -47,6 +47,7 @@ div, footer {
 }
 
 img.icon {
+	padding: 0px;
 	width: 1.1em;
 	height: 1.1em;
 }
