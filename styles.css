@@ -1,12 +1,15 @@
 html {
 	font-family: "Arial";
-	font-size: 19px;
+	font-size: 20px;
 }
 
 h2, p {
 	padding: 0px 20px 0px 20px;
 }
 
+img {
+	vertical-align: middle;
+}
 
 div.image img {
 	padding: 0px 20px 0px 20px;
@@ -26,6 +29,15 @@ div, footer {
 .small {
 	color: gray;
 	font-size: 14px;
+}
+
+img.icon {
+	width: 1.1em;
+	height: 1.1em;
+}
+
+a.footer-link {
+	color: gray;
 }
 
 body {
