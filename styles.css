@@ -1,11 +1,11 @@
 html {
-	font-family: "Arial";
-	font-size: 20px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16px;
 }
 
 h2, p, li {
 	margin-right: 30%;
-	padding: 0px 20px 0px 20px;
+	padding: 0px 40px 0px 20px;
 }
 
 img {
@@ -15,19 +15,34 @@ img {
 
 div.image img {
 	padding: 0px 20px 20px 20px;
-	width: 30%;
+	width: 28%;
 	float: right;
+}
+
+div.rect {
+	background: linear-gradient(90deg, #dddddd 70%, #ffffff 0%);
 }
 
 @media only screen and (max-width: 1000px) {
 	html {
-		font-size: 16px;
+		font-size: 14px;
 	}
+
 	h2, p, li {
 		margin-right: 0%;
 	}
+
 	div.image img {
-		width: 60%;
+		display: block;
+		float: none;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+
+	div.rect {
+		background: #dddddd;
 	}
 }
 
@@ -47,16 +62,17 @@ div, footer {
 }
 
 img.icon {
-	padding: 0px;
+	padding: 10px;
 	width: 1.1em;
 	height: 1.1em;
 }
 
-a.footer-link {
-	color: gray;
+a {
+	text-decoration: none;
 }
 
-body {
-	background-color: #ffaa55:
+a.footer-link {
+	text-decoration: underline;
+	color: gray;
 }
 
