@@ -3,7 +3,8 @@ html {
 	font-size: 20px;
 }
 
-h2, p {
+h2, p, li {
+	margin-right: 30%;
 	padding: 0px 20px 0px 20px;
 }
 
@@ -17,12 +18,25 @@ div.image img {
 	float: right;
 }
 
+@media only screen and (max-width: 1000px) {
+	html {
+		font-size: 16px;
+	}
+	h2, p, li {
+		margin-right: 0%;
+	}
+	div.image img {
+		width: 60%;
+	}
+}
+
 div, footer {
 	clear: both;
 }
 
 .centre {
-	font-size: 24px;
+	margin-right: 0%;
+	font-size: 1.5em;
 	text-align: center;
 }
 
