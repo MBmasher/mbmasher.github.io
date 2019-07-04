@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
 html {
-	font-family: "Courier New", Courier, monospace;
+	font-family: "Space Mono", "Courier New", Courier, monospace;
 	font-size: 16px;
 }
 
