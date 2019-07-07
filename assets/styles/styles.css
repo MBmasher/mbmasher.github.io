@@ -82,3 +82,8 @@ a.footer-link {
 	color: gray;
 }
 
+body {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
