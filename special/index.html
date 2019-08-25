@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<head>
+<title>special</title>
+</head>
+
+<body>
+<div id="clockbox"></div>
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var seconds= ((d.getTime()-1553217000000)/1000).toString();
+document.getElementById('clockbox').innerHTML=seconds + " seconds";
+}
+setInterval(GetClock,1);
+</script>
+
+</body>
