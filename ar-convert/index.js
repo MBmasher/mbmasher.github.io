@@ -22,7 +22,7 @@ function timeChange(num, amount) {
 	}
 }
 
-function ARConvert(num) {
+function ARConvert(num, rate) {
 	var textArray = [
 		"+HR: ",
 		"+EZ: ",
@@ -31,7 +31,8 @@ function ARConvert(num) {
 		"+HRDT: ",
 		"+HRHT: ",
 		"+EZDT: ",
-		"+EZHT: "
+		"+EZHT: ",
+		""
 	];
 	var valueArray = [
 		HR(num),
@@ -48,11 +49,13 @@ function ARConvert(num) {
 		textArray[i] += +valueArray[i].toFixed(2);
 	}
 
+	textArray[8] += rate + "x: " + +timeChange(num, rate).toFixed(4);
+
 	return textArray.join("<br>");
 }
 
 function buttonFunc() {
-	document.getElementById("output").innerHTML = ARConvert(parseFloat(document.getElementById("input").value));	
+	document.getElementById("output").innerHTML = ARConvert(parseFloat(document.getElementById("input").value),parseFloat(document.getElementById("rate").value));	
 }
 
 
