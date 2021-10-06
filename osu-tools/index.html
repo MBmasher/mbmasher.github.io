@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AR Convert</title>
+	<link rel="stylesheet" href="/assets/styles/styles.css"/>
+	<link rel="shortcut icon" type="image/png" href="/assets/img/favicon-512.png">
+	<link rel="shortcut icon" sizes="512x512" href="/assets/img/favicon-512.png">
+	<link rel="apple-touch-icon" href="/assets/img/favicon-512.png">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+	<h1>AR Convert</h1>
+
+	<input id="input" type="number" placeholder="Initial AR" step=0.1 />
+	<button onclick="buttonFunc()">Convert!</button>
+	<p>Custom rate:</p>
+	<input 	id="rate" type="number" value="2.0" step=0.1 />	
+	<p id="output"></p>
+
+	<h1>MS to AR</h1>
+	<input id="inputMsAR" type="number" placeholder="Milliseconds" step=10 />
+	<button onclick="buttonFuncMsAR()">Convert!</button>
+	<p id="outputMsAR"></p>
+
+	<h1>MS to BPM</h1>
+	<input id="inputMsBPM" type="number" placeholder="Milliseconds" step=10 />
+	<button onclick="buttonFuncMsBPM()">Convert!</button>
+	<p id="outputMsBPM"></p>
+
+	<h1>BPM to MS</h1>
+	<input id="inputBPMMs" type="number" placeholder="BPM" step=10 />
+	<button onclick="buttonFuncBPMMs()">Convert!</button>
+	<p id="outputBPMMs"></p>
+
+	<footer>
+		<hr>
+		<p class="small">2019-<script>document.write(new Date().getFullYear())</script> <a href="/" class="footer-link">MBmasher</p></a>
+	</footer>
+</body>
+</html>
