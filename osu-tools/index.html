@@ -7,31 +7,47 @@
 	<link rel="shortcut icon" sizes="512x512" href="/assets/img/favicon-512.png">
 	<link rel="apple-touch-icon" href="/assets/img/favicon-512.png">
 	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<h1>AR Convert</h1>
+	<header>
+		<h1>osu-tools</h1>
+	</header>
 
-	<input id="input" type="number" placeholder="Initial AR" step=0.1 />
-	<button onclick="buttonFunc()">Convert!</button>
-	<p>Custom rate:</p>
-	<input 	id="rate" type="number" value="2.0" step=0.1 />	
-	<p id="output"></p>
+	<main>
+		<section class="card-list">
+			<div class="card">
+				<h1>AR Convert</h1>
+				<input id="input" type="number" placeholder="Initial AR" step="0.1" />
+				<p>Custom rate:</p>
+				<input id="rate" type="number" placeholder="2.0" value="2.0" step="0.1" />
+				<button onclick="buttonFunc()">Convert!</button>
+				<p id="output"></p>
+			</div>
 
-	<h1>MS to AR</h1>
-	<input id="inputMsAR" type="number" placeholder="Milliseconds" step=10 />
-	<button onclick="buttonFuncMsAR()">Convert!</button>
-	<p id="outputMsAR"></p>
+			<div class="card">
+				<h1>MS to AR</h1>
+				<input id="inputMsAR" type="number" placeholder="Milliseconds" step="10" />
+				<button onclick="buttonFuncMsAR()">Convert!</button>
+				<p id="outputMsAR"></p>
+			</div>
 
-	<h1>MS to BPM</h1>
-	<input id="inputMsBPM" type="number" placeholder="Milliseconds" step=10 />
-	<button onclick="buttonFuncMsBPM()">Convert!</button>
-	<p id="outputMsBPM"></p>
+			<div class="card">
+				<h1>MS to BPM</h1>
+				<input id="inputMsBPM" type="number" placeholder="Milliseconds" step="10" />
+				<button onclick="buttonFuncMsBPM()">Convert!</button>
+				<p id="outputMsBPM"></p>
+			</div>
 
-	<h1>BPM to MS</h1>
-	<input id="inputBPMMs" type="number" placeholder="BPM" step=10 />
-	<button onclick="buttonFuncBPMMs()">Convert!</button>
-	<p id="outputBPMMs"></p>
+			<div class="card">
+				<h1>BPM to MS</h1>
+				<input id="inputBPMMs" type="number" placeholder="BPM" step="10" />
+				<button onclick="buttonFuncBPMMs()">Convert!</button>
+				<p id="outputBPMMs"></p>
+			</div>
+		</section>
+	</main>
 
 	<footer>
 		<hr>

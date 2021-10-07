@@ -1,0 +1,89 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  background-color: #1c1719;
+}
+
+input {
+  padding: 1rem;
+  background-color: #1c1719;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+header {
+  padding: 1rem;
+}
+
+main {
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+
+.card {
+  position: relative;
+  background-color: #2a2226;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  border-radius: 4px 0 0 4px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 8px;
+  border-radius: 4px 0 0 4px;
+}
+
+.card:nth-child(1)::before {
+  background-color: #f6a;
+}
+
+.card:nth-child(2)::before {
+  background-color: #86e;
+}
+
+.card:nth-child(3)::before {
+  background-color: #88b300;
+}
+
+.card:nth-child(4)::before {
+  background-color: #fc2;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+p {
+  padding-left: 0;
+}
+
+.card-list > .card {
+  margin-bottom: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
