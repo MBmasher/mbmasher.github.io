@@ -1,3 +1,14 @@
+// ==UserScript==
+// @name         Mai avg
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://maimaidx-eng.com/maimai-mobile/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=maimaidx-eng.com
+// @grant        none
+// ==/UserScript==
+
 (function() {
     'use strict';
 
@@ -40,6 +51,8 @@
         var youName = youBlock[0].getElementsByClassName("p_l_5 t_l f_l f_12 f_b")[0].innerHTML
         var themBlock = document.getElementsByClassName("friend_vs_friend_block")
         var themName = themBlock[0].getElementsByClassName("p_l_5 t_l f_l f_12 f_b")[0].innerHTML
+        youName += "　".repeat(8 - youName.length)
+        themName += "　".repeat(8 - themName.length)
         you.innerHTML = youName + " Avg: " + youAvg
         you.style.marginTop = "10px"
         them.innerHTML = themName + " Avg: " + themAvg
