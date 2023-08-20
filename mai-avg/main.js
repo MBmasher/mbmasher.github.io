@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name         Mai avg
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
-// @match        https://maimaidx-eng.com/maimai-mobile/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=maimaidx-eng.com
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
 
