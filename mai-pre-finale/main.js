@@ -1,3 +1,14 @@
+// ==UserScript==
+// @name         Mai only show pre-finale
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://maimaidx-eng.com/maimai-mobile/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=maimaidx-eng.com
+// @grant        none
+// ==/UserScript==
+
 (function() {
     'use strict';
 
@@ -6,19 +17,23 @@
     var preFinale;
     var preFinaleRemas
 
-    fetch(preFinaleUrl)
-        .then(function(response) {
-        response.text().then(function(text) {
-            preFinale = text;
-        }).then(fetch(preFinaleRemasUrl)
-                .then(function(response) {
+    var selection = document.getElementsByName("genre")
+    if (selection.length == 0) {
+
+        fetch(preFinaleUrl)
+            .then(function(response) {
             response.text().then(function(text) {
-                preFinaleRemas = text;
-                processPreFinale(preFinale, preFinaleRemas);
-            });
-        })
-        )
-    });
+                preFinale = text;
+            }).then(fetch(preFinaleRemasUrl)
+                    .then(function(response) {
+                response.text().then(function(text) {
+                    preFinaleRemas = text;
+                    processPreFinale(preFinale, preFinaleRemas);
+                });
+            })
+                   )
+        });
+    }
 })();
 
 function processPreFinale(preFinale, preFinaleRemas) {
@@ -217,4 +232,7 @@ function processPreFinale(preFinale, preFinaleRemas) {
             if (img.src.startsWith(d5_url)) {el.getElementsByClassName("f_10")[0].innerHTML = d5_s}
         }
     }
+
+    var screw = document.getElementsByClassName("screw_block m_15 f_15 p_s")[0]
+    screw.innerHTML += " (Filtering only maimai ~ FiNALE)"
 }
