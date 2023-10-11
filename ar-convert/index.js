@@ -35,12 +35,12 @@ function ARConvert(num, rate) {
 		""
 	];
 	var valueArray = [
-		HR(num),
+		Math.max(HR(num), num),
 		EZ(num),
 		timeChange(num, 1.5),
 		timeChange(num, 0.75),
-		timeChange(HR(num), 1.5),
-		timeChange(HR(num), 0.75),
+		timeChange(Math.max(HR(num), num), 1.5),
+		timeChange(Math.max(HR(num), num), 0.75),
 		timeChange(EZ(num), 1.5),
 		timeChange(EZ(num), 0.75),
 	];
