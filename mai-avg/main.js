@@ -8,7 +8,7 @@
     var remas = document.getElementsByClassName("music_remaster_score_back")
     var songList = [...bas, ...adv, ...exp, ...mas, ...remas]
 
-    var scoreList = document.getElementsByClassName("music_score_block w_120 t_r f_l f_12")
+    var scoreList = document.getElementsByClassName("music_score_block w_112 t_r f_l f_12")
     var sum = 0
     var len = songList.length
 
